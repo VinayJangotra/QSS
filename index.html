@@ -4,10 +4,290 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+ <nav class="fixed top-0 left-0 w-full z-50 bg-black p-4 shadow-lg">
+  <div class="flex items-center justify-between flex-wrap">
+    <!-- Logo Section -->
+    <div class="flex items-center">
+      <a href="https://www.qsstechnosoft.com/" class="flex items-center">
+        <img class="w-32" src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/logo-white.svg" alt="QSS Technosoft Logo">
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-300 hover:border-gray-300">
+        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm  flex flex-row mx-16 lg:flex-grow">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 ml-24 mr-6">Services</a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600  mr-6">Technologies</a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600  mr-6">Industries</a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600  mr-6">Portfolio</a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600">Contact</a>
+      </div>
+      <div>
+        <a href="#" class="inline-block text-sm px-6 py-3 rounded text-white bg-red-600 hover:bg-red-700 mt-4 lg:mt-0">Generative AI</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--
+  Hero section 👋
+ 
+-->
+<section
+  class="relative bg-[url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center bg-no-repeat h-screen flex items-center"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div
+    class="absolute  mx-4 max-w-screen-xl px-6 lg:px-8 text-center lg:text-left z-10 text-white"
+  >
+    <h1 class="text-4xl font-bold sm:text-5xl">
+      Innovating Your Business with Next-Gen <br />
+      <span class="text-red-500"> Blockchain Solutions</span>
+    </h1>
+
+    <p class="mt-4 max-w-2xl text-lg sm:text-xl">
+      Transform your business with advanced blockchain technology and next-gen solutions for modern challenges.
+    </p>
+
+    <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+      <a
+        href="#"
+        class="inline-block rounded bg-red-600 px-8 py-3 text-sm font-medium hover:bg-red-700 transition"
+      >
+        Book a Consultation
+      </a>
+      <a
+        href="#"
+        class="inline-block rounded bg-white px-8 py-3 text-sm font-medium text-red-600 hover:bg-gray-200 transition"
+      >
+        View Portfolio
+      </a>
+    </div>
+
+    <div class="mt-8 flex items-center gap-4">
+      <!-- Rating Section -->
+      <div class="flex items-center bg-white p-2 rounded-lg">
+        <img
+          src="https://www.clipartmax.com/png/middle/138-1387498_review-clipart-5-star-rating-5-stars-with-outline.png"
+          alt="Rating"
+          class="h-8"
+        />
+        <span class="ml-2 text-lg text-gray-800 font-semibold">4.9 ★★★★★</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- flip card section -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+          <h2>$100M+</h2>
+          <p>INVESTMENT!</p>
+          <small>Raised By Start-ups.</small>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+          <p>Empowered with experience and skillful workforce, diverse technology exposure.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+          <h2>400+</h2>
+          <p>PROJECTS!</p>
+          <small>That Successfully Delivered.</small>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+          <p>Empowered with experience and skillful workforce, diverse technology exposure.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front flex flex-col items-center justify-center ">
+          <h1 class="font-bold text-4xl">13+</h1>
+          <p>YEARS!</p>
+          <small>The Splendid Journey.</small>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+          <p>Empowered with experience and skillful workforce, diverse technology exposure.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+          <h2>50+</h2>
+          <p>CLIENTS!</p>
+          <small>Globally Trusted Solutions.</small>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+          <p>Empowered with experience and skillful workforce, diverse technology exposure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 4th section -->
+
+    <div class="relative bg-cover bg-center h-[400px]" style="background-image: url('https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/become-partner-img.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="relative max-w-6xl mx-[100px] -mt-[200px] bg-white shadow-lg p-10 rounded-lg flex items-center space-x-10">
+    <!-- Left Section -->
+    <div class="flex-shrink-0 text-center">
+      <div class="text-red-600 text-5xl font-bold">30+</div>
+      <div class="text-gray-600 text-lg font-medium">Years Experience<br>working</div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="flex-1">
+      <h1 class="text-3xl font-bold text-gray-800">
+        Cutting-edge <span class="text-red-600">Tech Solution</span> Pioneers
+      </h1>
+      <p class="mt-4 text-gray-600 text-lg">
+        Innovating with a digital mindset
+      </p>
+      <p class="mt-2 text-gray-500">
+        QSS Technosoft, a leading provider of software development services, represents a team of 250+ skillful associates, who rely on building scalable and smart solutions satisfying the client’s quest for an exceptional product. Being specialized in every vertical of industries, our world-class software solutions range from developing highly intriguing web & mobile apps to integrating technologies like Blockchain, Chatbot, AI, Data Analytics, cloud-based services, and more.
+      </p>
+      <button class="mt-6 px-6 py-3 bg-red-600 text-white font-medium text-sm uppercase rounded hover:bg-red-700">
+        Become a partner
+      </button>
+    </div>
+  </div>
+ <!-- 5th section -->
+
+ <div  class="bg-[#020128] text-white">
+  <div class="container mx-auto px-6 py-12">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-3xl font-bold">Our Services</h1>
+      <p class="mt-4 text-lg">The product life cycle at QSS is a blend of our technical expertise and best practices across industries to develop products attaining larger market shares and fetching greater ROI for our customers.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">UI/UX Design</h2>
+        <p class="mb-4">Build smart and intuitive UI/UX Design for an amazing and meaningful end-user experience.</p>
+        <p class="text-gray-300">A responsive user interface design plays a decisive role during the design and development of web or mobile applications. When a user visits your web page or application, your UI/UX design is the first thing that will create an impression.</p>
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img src="https://via.placeholder.com/400x300" alt="UI/UX Design Illustration" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Box -->
+  <div class="fixed bottom-4 right-4 bg-white text-black p-4 rounded-lg shadow-lg flex items-center space-x-3">
+    <div class="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
+      <img src="https://via.placeholder.com/40" alt="Chat Icon">
+    </div>
+    <p>I am online! How can I help you?</p>
+  </div>
+ </div>
+  
+
+ <!-- section 6 -->
+
+ <div class="bg-gray-100 text-gray-800"">
+   <!-- Container -->
+  <div class="container mx-auto px-6 py-12">
+
+    <!-- Content Section -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+
+      <!-- Image Section -->
+      <div class="relative">
+        <div class="absolute top-6 left-6 w-full h-full bg-black opacity-20 rounded-lg"></div>
+        <img src="https://via.placeholder.com/500x300" alt="Incident Management" class="rounded-lg shadow-lg relative">
+      </div>
+
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Incident Management</h2>
+        <h3 class="text-xl font-semibold mb-4 text-gray-600">Xamarin Cross Platform Mobile App</h3>
+        <p class="mb-4 text-gray-700">
+          Cross-platform mobility solutions to record and notify health facilities about incidents in alarming situations for a US-based customer. After identifying the challenges, we surmounted the problems by creating a cross-platform (hybrid) mobile app solution that is accessible on the iOS and Android platforms as well.
+        </p>
+        <p class="text-gray-700">
+          Major features of the application are - Dashboard, Automated workflows, Smart notifications, Reporting...
+        </p>
+        <button class="mt-6 px-6 py-2 bg-red-500 text-white font-bold rounded-lg shadow hover:bg-red-600">View All</button>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
+  <!-- section 7 -->
+   <div class="bg-gray-900 text-white">
+     <section class="awards-section text-center py-12">
+        <h2 class="text-4xl font-bold mb-8">Accredited with Awards and Achievements</h2>
+        
+        <div class="awards-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-12">
+            <!-- Award 1 -->
+            <div class="award-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/100" alt="Top Firms" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">TopFirms | 2020</h3>
+                <p class="text-gray-400">Ranked as one of the Top Mobile App Development Companies in 2020.</p>
+            </div>
+            <!-- Award 2 -->
+            <div class="award-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/100" alt="Techreviewer" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">Techreviewer | 2024</h3>
+                <p class="text-gray-400">Ranked among the top cross platform app developers in 2024.</p>
+            </div>
+            <!-- Award 3 -->
+            <div class="award-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="https://via.placeholder.com/100" alt="App Development Companies" class="mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-2">App Development Companies | 2020</h3>
+                <p class="text-gray-400">Ranked among the top mobile app developers in Minnesota.</p>
+            </div>
+        </div>
+    </section>
+   </div>
+
+
 </body>
 </html>
